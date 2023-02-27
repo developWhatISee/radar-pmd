@@ -8,11 +8,16 @@
 }
 
 .title p {
-  font-size: 22px;
+  font-size: 2.2rem;
   font-family: Source Han Sans CN;
   font-weight: 400;
   color: #666666;
   line-height: 31px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
 }
 
 .form-card {
@@ -23,8 +28,7 @@
 }
 
 .full-width {
-  width: 323px;
-  height: 42px;
+  height: 4.2rem;
   border: 1px solid #6FC622;
   border-radius: 5px;
   margin-bottom: 20px;
@@ -32,7 +36,6 @@
 }
 
 .action-button {
-  width: 328.6px;
   height: 42px;
   background: #6FC622;
   border-radius: 5px;
@@ -46,17 +49,14 @@
 section {
   width: 100%;
   margin-top: 18px;
-  text-align: center;
 }
 
 .checkbox-text {
-  font-size: 12px;
+  font-size: 1.2rem;
   font-family: Source Han Sans CN;
   font-weight: 400;
   color: #666666;
   line-height: 19px;
-  margin-left: 8px;
-  letter-spacing: 2px;
 }
 
 .checkbox-text button {
