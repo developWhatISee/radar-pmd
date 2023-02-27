@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="title">
+    <img class="logo" src="../../assets/school_logo.png" alt="school_logo">
+    <p>您好，欢迎登陆<br/>大学生健康监测平台</p>
+  </div>
+  <mat-card class="form-card">
+    <mat-card-content>
+      <form class="form" [formGroup]="loginForm">
+        <input class="full-width" matInput placeholder="请输入手机号" value="">
+        <input class="full-width" matInput placeholder="请输入验证码" value="">
+        <button class="action-button" mat-flat-button color="primary">登录</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+  <section class="section">
+    <mat-checkbox class="checkbox-margin"></mat-checkbox>
+    <span class="checkbox-text">
+      我已阅读并同意<button mat-button>《用户协议》</button>与<button mat-button>《隐私政策》</button>
+    </span>
+  </section>
+</div>

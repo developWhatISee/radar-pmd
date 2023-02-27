@@ -1,0 +1,69 @@
+.container {
+  padding: 65px 28px;
+}
+
+.logo {
+  width: 154px;
+  height: 33px;
+}
+
+.title p {
+  font-size: 22px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #666666;
+  line-height: 31px;
+}
+
+.form-card {
+  margin-top: 100px;
+  background: rgb(244, 245, 249);
+  box-shadow: none;
+  padding: 0;
+}
+
+.full-width {
+  width: 323px;
+  height: 42px;
+  border: 1px solid #6FC622;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background: rgb(244, 245, 249);
+}
+
+.action-button {
+  width: 328.6px;
+  height: 42px;
+  background: #6FC622;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 19px;
+}
+
+section {
+  width: 100%;
+  margin-top: 18px;
+  text-align: center;
+}
+
+.checkbox-text {
+  font-size: 12px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #666666;
+  line-height: 19px;
+  margin-left: 8px;
+  letter-spacing: 2px;
+}
+
+.checkbox-text button {
+  font-size: 12px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #6FC622;
+  line-height: 19px;
+  padding: 0;
+}
