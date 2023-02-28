@@ -8,6 +8,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
   imports: [
@@ -22,7 +23,8 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatCheckboxModule,
     MatListModule,
     MatGridListModule,
-    MatTabsModule
+    MatTabsModule,
+    MatDividerModule
   ]
 })
 export class ShareModule { }

@@ -1,1 +1,39 @@
-<p>page-tabs works!</p>
+<div class="container">
+  <router-outlet></router-outlet>
+  <mat-nav-list class="nav-list">
+    <mat-list-item disableRipple="true">
+      <a 
+        mat-list-item 
+        routerLink="homePage"
+        routerLinkActive="active" 
+        (click)="onClick()"
+      >
+        <div *ngIf="currentRouter === '/home/homePage'; else homePageSelected" class="nav-block-selected">
+          <img class="list-img" src="../../assets/health_selected.png" alt="health">首页
+        </div>
+        <ng-template #homePageSelected>
+          <div class="nav-block">
+            <img class="list-img" src="../../assets/health.png" alt="health">首页
+          </div>
+        </ng-template>
+      </a>
+    </mat-list-item>
+    <mat-list-item>
+      <a
+        mat-list-item 
+        routerLink="userPage"
+        routerLinkActive="active" 
+        (click)="onClick()"
+      >
+        <div *ngIf="currentRouter === '/home/userPage'; else userPageSelected" class="nav-block-selected">
+          <img class="list-img" src="../../assets/user_selected.png" alt="user">我的
+        </div>
+        <ng-template #userPageSelected>
+          <div class="nav-block">
+            <img class="list-img" src="../../assets/user.png" alt="user">我的
+          </div>
+        </ng-template>
+      </a>
+    </mat-list-item>
+  </mat-nav-list>
+</div>
