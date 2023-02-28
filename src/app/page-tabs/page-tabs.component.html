@@ -6,14 +6,14 @@
         mat-list-item 
         routerLink="homePage"
         routerLinkActive="active" 
-        (click)="onClick()"
+        (click)="onClickHomePage()"
       >
-        <div *ngIf="currentRouter === '/home/homePage'; else homePageSelected" class="nav-block-selected">
+        <div *ngIf="router.url === '/home/homePage'; else homePage" class="nav-block">
           <img class="list-img" src="../../assets/health_selected.png" alt="health">首页
         </div>
-        <ng-template #homePageSelected>
+        <ng-template #homePage>
           <div class="nav-block">
-            <img class="list-img" src="../../assets/health.png" alt="health">首页
+            <img class="list-img" src="../../assets/user.png" alt="user">首页
           </div>
         </ng-template>
       </a>
@@ -23,12 +23,12 @@
         mat-list-item 
         routerLink="userPage"
         routerLinkActive="active" 
-        (click)="onClick()"
+        (click)="onClickUserPage()"
       >
-        <div *ngIf="currentRouter === '/home/userPage'; else userPageSelected" class="nav-block-selected">
+        <div *ngIf="router.url === '/home/userPage'; else userPage" class="nav-block">
           <img class="list-img" src="../../assets/user_selected.png" alt="user">我的
         </div>
-        <ng-template #userPageSelected>
+        <ng-template #userPage>
           <div class="nav-block">
             <img class="list-img" src="../../assets/user.png" alt="user">我的
           </div>

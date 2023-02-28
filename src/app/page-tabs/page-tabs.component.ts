@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute, ParamMap } from '@angular/router';
-import { Location } from '@angular/common';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-page-tabs',
@@ -9,19 +9,17 @@ import { Location } from '@angular/common';
 })
 export class PageTabsComponent implements OnInit {
   constructor(
-    private router: Router,
+    public router: Router
   ) { }
 
-  homePage: boolean = true;
-  userPage: boolean = false;
-  currentRouter: string = '';
-  
+  ngOnInit(): void {
 
-  ngOnInit(): void { 
-    this.currentRouter = this.router.url;
   }
 
-  onClick() {
-    this.currentRouter = this.router.url;
+  onClickHomePage() {
+
+  }
+  onClickUserPage() {
+
   }
 }
