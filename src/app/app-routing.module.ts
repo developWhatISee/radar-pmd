@@ -16,6 +16,10 @@ const routes: Routes = [
     component: PageTabsComponent,
     children: [
       {
+        path: '',
+        redirectTo: '/home/homePage', pathMatch: 'full'
+      },
+      {
         path: 'homePage',
         loadChildren: () => import('./home-page/home-page.module').then(m => m.HomePageModule)
       },
@@ -24,6 +28,22 @@ const routes: Routes = [
         loadChildren: () => import('./user-page/user-page.module').then(m => m.UserPageModule)
       }
     ]
+  },
+  {
+    path: 'warning-analysis',
+    loadChildren: () => import('./warning-analysis/warning-analysis.module').then(m => m.WarningAnalysisModule)
+  },
+  {
+    path: 'warning-pending',
+    loadChildren: () => import('./warning-pending/warning-pending.module').then(m => m.WarningPendingModule)
+  },
+  {
+    path: 'warning-processed',
+    loadChildren: () => import('./warning-processed/warning-processed.module').then(m => m.WarningProcessedModule)
+  },
+  {
+    path: 'dormitory',
+    loadChildren: () => import('./dormitory/dormitory.module').then(m => m.DormitoryModule)
   }
 ];
 

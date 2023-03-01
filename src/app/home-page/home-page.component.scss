@@ -66,18 +66,20 @@
   margin-right: 16px;
 }
 
-.list-item-number-title button {
+.list-item-number-title a {
   font-size: 31px;
   font-family: Arial;
   font-weight: bold;
   color: #407EC7;
+  text-decoration: none;
 }
 
-.list-item-title button {
+.list-item-title a {
   font-size: 19px;
   font-family: Arial;
   font-weight: bold;
   color: #407EC7;
+  text-decoration: none;
 }
 
 .list-item-subtitle {
@@ -133,17 +135,19 @@
     margin-top: 38px;
     margin-right: 16px;
   }
-  .list-item-number-title button {
+  .list-item-number-title a {
     font-size: 25px;
     font-family: Arial;
     font-weight: bold;
     color: #407EC7;
+    text-decoration: none;
   }
 
-  .list-item-title button {
+  .list-item-title a {
     font-size: 17px;
     font-family: Arial;
     font-weight: bold;
     color: #407EC7;
+    text-decoration: none;
   }
 }

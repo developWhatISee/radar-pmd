@@ -9,6 +9,9 @@ import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 @NgModule({
   imports: [
@@ -24,7 +27,10 @@ import { MatDividerModule } from '@angular/material/divider';
     MatListModule,
     MatGridListModule,
     MatTabsModule,
-    MatDividerModule
+    MatDividerModule,
+    MatIconModule,
+    MatTableModule,
+    MatPaginatorModule
   ]
 })
 export class ShareModule { }
