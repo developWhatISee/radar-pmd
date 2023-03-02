@@ -44,6 +44,10 @@ const routes: Routes = [
   {
     path: 'dormitory',
     loadChildren: () => import('./dormitory/dormitory.module').then(m => m.DormitoryModule)
+  },
+  {
+    path: 'detail',
+    loadChildren: () => import('./detail/detail.module').then(m => m.DetailModule)
   }
 ];
 

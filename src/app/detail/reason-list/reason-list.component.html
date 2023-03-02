@@ -1,0 +1,10 @@
+<mat-nav-list>
+  <mat-card>
+    <mat-card-title class="title">预警原因选择：</mat-card-title>
+  </mat-card>
+  <mat-selection-list [multiple]="false">
+    <mat-list-option *ngFor="let reason of reasonList" [value]="reason">
+    {{reason}}
+    </mat-list-option>
+  </mat-selection-list>
+</mat-nav-list>

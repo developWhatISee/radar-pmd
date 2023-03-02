@@ -6,13 +6,11 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ShareModule } from './share/share.module';
 import { PageTabsComponent } from './page-tabs/page-tabs.component';
-import { DetailComponent } from './detail/detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PageTabsComponent,
-    DetailComponent,
+    PageTabsComponent
   ],
   imports: [
     BrowserModule,
