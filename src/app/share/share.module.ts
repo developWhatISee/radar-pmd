@@ -15,6 +15,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
@@ -36,7 +37,8 @@ import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
     MatPaginatorModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatBottomSheetModule
+    MatBottomSheetModule,
+    HttpClientModule
   ]
 })
 export class ShareModule { }

@@ -34,6 +34,20 @@
   margin-bottom: 20px;
   background: rgb(244, 245, 249);
 }
+.code {
+  position: relative;
+}
+
+.text-button {
+  font-size: 15px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #6FC622;
+  // line-height: 19px;
+  position: absolute;
+  right: 25px;
+  top: 56px;
+}
 
 .action-button {
   height: 42px;
@@ -66,4 +80,10 @@ section {
   color: #6FC622;
   line-height: 19px;
   padding: 0;
+}
+
+:host::ng-deep {
+  .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+    background: #6FC622;
+  }
 }

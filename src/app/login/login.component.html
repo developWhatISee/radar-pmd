@@ -6,9 +6,16 @@
   <mat-card class="form-card">
     <mat-card-content>
       <form class="form" [formGroup]="loginForm">
-        <input class="full-width" matInput placeholder="请输入手机号" value="">
-        <input class="full-width" matInput placeholder="请输入验证码" value="">
-        <button class="action-button" mat-flat-button color="primary">登录</button>
+        <input class="full-width" matInput placeholder="请输入手机号" formControlName="account">
+        <input class="full-width code" matInput type="password" placeholder="请输入密码" formControlName="password">
+        <!-- <input class="full-width code" matInput placeholder="请输入验证码" formControlName="password">
+        <p class="text-button" (click)="getVerificationCode()">获取验证码</p> -->
+        <button
+          class="action-button"
+          mat-flat-button 
+          color="primary"
+          (click)="login()"
+        >登录</button>
       </form>
     </mat-card-content>
   </mat-card>
