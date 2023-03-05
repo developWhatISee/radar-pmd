@@ -9,8 +9,9 @@
   justify-content: center;
   box-shadow: none;
   border-radius: 0;
-  .mat-icon {
-    font-size: 21px;
+  .icon_back {
+    width: 21px;
+    height: 21px;
     position: absolute;
     left: 21px;
   }
@@ -99,6 +100,7 @@
     font-family: Source Han Sans CN;
     font-weight: 400;
     color: #6FC622;
+    white-space: nowrap;
     span {
       margin: 0 5px;
     }

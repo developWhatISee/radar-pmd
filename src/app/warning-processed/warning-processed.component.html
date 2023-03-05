@@ -1,11 +1,15 @@
 <div class="container">
   <mat-card class="header">
-    <mat-icon (click)="goBack()">arrow_back_ios</mat-icon>
+    <img (click)="goBack()" class="icon_back" src="../../assets/chevron_left.png" alt="chevron_left">
     <span>已处理</span>
   </mat-card>
   <p class="total">共3条已处理数据</p>
   <mat-card class="content">
-    <mat-card *ngFor="let time of times" class="time-block">
+    <mat-card 
+      *ngFor="let time of times" 
+      class="time-block"
+      routerLink="/detail"
+    >
       <p class="time">{{ time }}<img src="../../assets/arrow_down.png" alt="arrow_down"></p>
       <mat-card *ngFor="let item of lists[time]" class="card-item">
         <mat-card-header class="avatar">

@@ -25,7 +25,6 @@ export class WarningPendingComponent implements OnInit {
   ngOnInit(): void {
     this.warningWebSocket.warning$
     .subscribe((x: any) => {
-      if(!x.payload) return
       this.lists['2023-03-06'].push(
         { name: '朴南哲', college: '计算机科学学院', room: 'A#2201', phone: '15827254230', score: '67.5', emptyBed: '39.3%', temperature: '38℃', level: 'one' }
       )
