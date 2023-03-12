@@ -1,10 +1,10 @@
-<mat-nav-list>
+<div class="container">
   <mat-card>
     <mat-card-title class="title">预警原因选择：</mat-card-title>
   </mat-card>
-  <mat-selection-list [multiple]="false">
-    <mat-list-option *ngFor="let reason of reasonList" [value]="reason">
+  <mat-selection-list #reasons [multiple]="false">
+    <mat-list-option *ngFor="let reason of reasonList" [value]="reason" (click)="onClick()">
     {{reason}}
     </mat-list-option>
   </mat-selection-list>
-</mat-nav-list>
+</div>

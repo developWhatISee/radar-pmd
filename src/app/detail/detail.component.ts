@@ -15,8 +15,7 @@ export class DetailComponent implements OnInit {
     private bottomSheet: MatBottomSheet
   ) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
   goBack() {
     this.location.back();
